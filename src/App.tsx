@@ -3,6 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Inicio from './componentes/Inicio';
+import Media from './componentes/Media';
+import Contacto from './componentes/Contacto';
+import Ministerios from './componentes/Ministerios';
 
 const App: React.FC = () =>{
   return(
@@ -18,10 +21,16 @@ const App: React.FC = () =>{
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Home</a>
+                  <Link className='nav-link active' to="/">Inicio</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Link</a>
+                  <Link className='nav-link active' to="/ministerios">Ministerios</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className='nav-link active' to="/media">Media</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className='nav-link active' to="/contacto">Contacto</Link>
                 </li>
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -34,28 +43,17 @@ const App: React.FC = () =>{
                     <li><a className="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
               </ul>
               <form className="d-flex" role="search">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button className="btn btn-outline-success" type="submit">Search</button>
               </form>
             </div>
           </div>
         </nav>
-        <nav>
-          <ul>
-            <li><Link to="/"></Link></li>
-            <li><Link to="/contacto"></Link></li>
-            <li><Link to="/media"></Link></li>
-            <li><Link to="/ministerios"></Link></li>
-          </ul>
-        </nav>
-
         <Routes>
           <Route path="/" element={<Inicio />}></Route>
+          <Route path="/media" element={<Media />}></Route>
+          <Route path="/contacto" element={<Contacto />}></Route>
+          <Route path="/ministerios" element={<Ministerios />}></Route>
         </Routes>
 
       </div>
