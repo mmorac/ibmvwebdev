@@ -1,0 +1,39 @@
+body{
+    background-color: #fbf9f9ff;
+}
+
+/* ELEMENTOS DEL NAVBAR */
+
+.navbar-transparent {
+    background-color: transparent !important;
+    border: none;
+}
+
+.nav-item{
+    width: 13%;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+  
+/* ELEMENTOS DE LA PÁGINA DE CONTACTO */
+.contacto_container{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+    text-align: center;
+}
+.social_container{
+    display: inline-flex;
+    width: 25%;
+    justify-content: center;
+    color: black;
+}
+
+.social{
+    height: 5rem;
+}
+
