@@ -23,14 +23,18 @@ body{
 .contacto_container{
     width: 60%;
     margin-left: 20%;
-    margin-top: 10%;
+    margin-top: 15%;
     text-align: center;
 }
 .social_container{
     display: inline-flex;
     width: 25%;
     justify-content: center;
-    color: black;
+}
+
+.social_container a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .social{
