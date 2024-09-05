@@ -1,6 +1,22 @@
+@font-face {
+    font-family: 'Bambino';
+    src: url('/font/Bambino.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bambino Bold';
+    src: url('/font/Bambino Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body{
     background-color: #fbf9f9ff;
+    font-family: 'Bambino Bold';
 }
+
 
 /* ELEMENTOS DEL NAVBAR */
 
