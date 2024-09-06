@@ -1,5 +1,4 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useRef } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Inicio from './componentes/Inicio';
@@ -8,6 +7,19 @@ import Contacto from './componentes/Contacto';
 import Ministerios from './componentes/Ministerios';
 
 const App: React.FC = () =>{
+
+  const collapseRef = useRef<HTMLDivElement | null>(null);
+
+  const handleNavItemClick = () => {
+    const collapseElement = collapseRef.current;
+    if (collapseElement && collapseElement.classList.contains('show')) {
+      const bsCollapse = new (window as any).bootstrap.Collapse(collapseElement, {
+        toggle: true,
+      });
+      bsCollapse.hide();
+    }
+  };
+
   return(
     <Router>
 
@@ -23,16 +35,16 @@ const App: React.FC = () =>{
             <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link className='nav-link active' to="/">Inicio</Link>
+                  <Link className='nav-link active' to="/" onClick={handleNavItemClick}>Inicio</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className='nav-link active' to="/ministerios">Ministerios</Link>
+                  <Link className='nav-link active' to="/ministerios" onClick={handleNavItemClick}>Ministerios</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className='nav-link active' to="/media">Media</Link>
+                  <Link className='nav-link active' to="/media" onClick={handleNavItemClick}>Media</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className='nav-link active' to="/contacto">Contacto</Link>
+                  <Link className='nav-link active' to="/contacto" onClick={handleNavItemClick}>Contacto</Link>
                 </li>
               </ul>
             </div>
