@@ -12,14 +12,16 @@ const App: React.FC = () =>{
     <Router>
 
       <div>
-        <nav className="navbar navbar-expand-lg navbar-transparent">
-          <div className="container d-flex justify-content-center">
-            <a className="navbar-brand" href="#"><img className='social' src="/img/ibmv_logo.png" alt="" /></a>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="container">
+            <a className="navbar-brand" href="#">
+              <img className='social' src="/img/ibmv_logo.png" alt="Logo" />
+            </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul className="navbar-nav">
                 <li className="nav-item">
                   <Link className='nav-link active' to="/">Inicio</Link>
                 </li>
@@ -33,8 +35,6 @@ const App: React.FC = () =>{
                   <Link className='nav-link active' to="/contacto">Contacto</Link>
                 </li>
               </ul>
-              <form className="d-flex" role="search">
-              </form>
             </div>
           </div>
         </nav>

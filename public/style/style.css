@@ -1,25 +1,48 @@
 @font-face {
     font-family: 'Bambino';
-    src: url('/font/Bambino.ttf') format('ttf');
+    src: url('/font/Bambino.ttf') format('truetype'); /* 'truetype' es el formato correcto */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Bambino Bold';
-    src: url('/font/Bambino Bold.ttf') format('ttf');
+    src: url('/font/Bambino Bold.ttf') format('truetype'); /* 'truetype' */
     font-weight: bold;
     font-style: normal;
 }
 
 body{
-    background-color: #fbf9f9ff;
-    font-family: 'Bambino Bold';
+    background-image: url("/img/fondo_test.jpg");
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    /*background-color: #fbf9f9ff;*/
+    font-family: 'Bambino Bold', sans-serif;
 }
 
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2; /* Asegúrate de que el contenido esté por encima de la capa */
+    padding: 20px;
+    color: black; /* Cambia según el diseño */
+}
 
 /* ELEMENTOS DEL NAVBAR */
 
+ 
 .navbar-transparent {
     background-color: transparent !important;
     border: none;
@@ -41,16 +64,20 @@ body{
     margin-left: 20%;
     margin-top: 15%;
     text-align: center;
+    position: relative;
+    z-index: 3;
 }
 .social_container{
     display: inline-flex;
     width: 25%;
     justify-content: center;
+    position: relative;
 }
 
 .social_container a{
     text-decoration: none;
     color: inherit;
+    position: relative;
 }
 
 .social{
