@@ -37,9 +37,24 @@ body::before {
     position: relative;
     z-index: 2; /* Asegúrate de que el contenido esté por encima de la capa */
     padding: 20px;
+    text-align: center;
     color: black; /* Cambia según el diseño */
+    display: flex;
 }
 
+.titulo{
+    position: relative;
+    z-index: 2; /* Asegúrate de que el contenido esté por encima de la capa */
+    width: 100%;
+    justify-content: center;
+    color: black; /* Cambia según el diseño */
+    display: flex;    
+}
+
+.titulo h2{
+    text-align: center;
+
+}
 /* ELEMENTOS DEL NAVBAR */
 
  
@@ -58,6 +73,18 @@ body::before {
     width: 100%;
 }
   
+/* ELEMENTOS DE LA PÁGINA VISÍTANOS */
+
+.contenedorimagenvisita{
+    height: 60%;
+    width: 50%;
+}
+.como_llegar{
+    display: inline-flex;
+    width: 90%;
+    height: 90%;
+}
+
 /* ELEMENTOS DE LA PÁGINA DE CONTACTO */
 .contacto_container{
     width: 60%;

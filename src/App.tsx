@@ -5,6 +5,7 @@ import Inicio from './componentes/Inicio';
 import Media from './componentes/Media';
 import Contacto from './componentes/Contacto';
 import Ministerios from './componentes/Ministerios';
+import Visita from './componentes/Visita';
 
 const App: React.FC = () =>{
 
@@ -38,6 +39,9 @@ const App: React.FC = () =>{
                   <Link className='nav-link active' to="/" onClick={handleNavItemClick}>Inicio</Link>
                 </li>
                 <li className="nav-item">
+                  <Link className='nav-link active' to="/visita" onClick={handleNavItemClick}>Visítanos</Link>
+                </li>
+                <li className="nav-item">
                   <Link className='nav-link active' to="/ministerios" onClick={handleNavItemClick}>Ministerios</Link>
                 </li>
                 <li className="nav-item">
@@ -53,6 +57,7 @@ const App: React.FC = () =>{
         <Routes>
           <Route path="/" element={<Inicio />}></Route>
           <Route path="/media" element={<Media />}></Route>
+          <Route path="/visita" element={<Visita />}></Route>
           <Route path="/contacto" element={<Contacto />}></Route>
           <Route path="/ministerios" element={<Ministerios />}></Route>
         </Routes>
