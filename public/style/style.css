@@ -35,17 +35,18 @@ body::before {
 
 .container {
     position: relative;
+    width: 100vh;
     z-index: 2; /* Asegúrate de que el contenido esté por encima de la capa */
     padding: 20px;
     text-align: center;
+    justify-content: center;
     color: black; /* Cambia según el diseño */
     display: flex;
 }
 
 .titulo{
     position: relative;
-    z-index: 2; /* Asegúrate de que el contenido esté por encima de la capa */
-    width: 100%;
+    z-index: 2;
     justify-content: center;
     color: rgb(200, 200, 200);
     display: flex;    
@@ -98,6 +99,9 @@ body::before {
     width: 90%;
     height: 90%;
 }
+
+/* ELEMENTOS DE LA PÁGINA MEDIA */
+
 
 /* ELEMENTOS DE LA PÁGINA DE CONTACTO */
 .contacto_container{
