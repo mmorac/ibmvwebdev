@@ -36,11 +36,11 @@ body::before {
 .container {
     position: relative;
     width: 100vh;
-    z-index: 2; /* Asegúrate de que el contenido esté por encima de la capa */
+    z-index: 2; 
     padding: 20px;
     text-align: center;
     justify-content: center;
-    color: black; /* Cambia según el diseño */
+    color: black; 
     display: flex;
 }
 
@@ -54,8 +54,8 @@ body::before {
 
 .titulo h2{
     text-align: center;
-
 }
+
 /* ELEMENTOS DEL NAVBAR */
 
 .navbar{
@@ -87,6 +87,19 @@ body::before {
     transform: scale(1.15);
 }
 
+/* ELEMENTOS DE INICIO */
+
+.descripcion{
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    color: rgb(200, 200, 200);
+    display: flex;    
+}
+
+.descripcion p{
+    color: rgb(200, 200, 200);
+}
 
 /* ELEMENTOS DE LA PÁGINA VISÍTANOS */
 
