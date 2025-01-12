@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   deploy:
     docker:
-      - image: circleci/node:16
+      - image: cimg/node:lts-browsers
     steps:
       - checkout
       - run:
