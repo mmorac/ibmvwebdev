@@ -1,0 +1,27 @@
+version: 2.1
+
+jobs:
+  deploy:
+    docker:
+      - image: circleci/node:16
+    steps:
+      - checkout
+      - run:
+          name: Install Firebase CLI
+          command: npm install -g firebase-tools
+      - run:
+          name: Install Dependencies
+          command: npm ci
+      - run:
+          name: Deploy to Firebase
+          command: firebase deploy --token $FIREBASE_AUTH_TOKEN
+
+workflows:
+  version: 2
+  deploy-on-push:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only:
+                - master  # Adjust to your deployment branch
