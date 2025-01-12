@@ -14,7 +14,9 @@ jobs:
           command: npm ci
       - run:
           name: Build the Project
-          command: npm run build          
+          command: |
+            export CI=false
+            npm run build          
       - run:
           name: Deploy to Firebase
           command: firebase deploy --token $FIREBASE_AUTH_TOKEN
