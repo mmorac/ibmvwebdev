@@ -22,7 +22,7 @@ const App: React.FC = () => {
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="">
               <img className="social" src="/img/ibmv_logo.png" alt="Logo" />
             </a>
             <button
