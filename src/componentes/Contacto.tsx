@@ -13,7 +13,7 @@ const Contacto: React.FC = () =>{
                 <a href="mailto:pastormeyermasvida@icloud.com" target="_blank"><img className="social" src="/img/ibmv_email.png" alt="" /><br/>pastormeyermasvida@icloud.com</a>
             </div>
             <div className="social_container">
-                <a href="https://wa.me/34671125688" target="_blank"><img className="social" src="/img/ibmv_wa.png" alt="" /><br/>671125688</a>
+                <a href="https://wa.me/34671125688" target="_blank"><img className="social" src="/img/ibmv_wa.png" alt="" /><br/>+34 671 12 56 88</a>
             </div>
         </div>
     );

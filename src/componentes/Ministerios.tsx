@@ -2,7 +2,9 @@ import React from "react";
 
 const Ministerios: React.FC = () =>{
     return(
-        <h2>Ministerios</h2>
+        <div className="titulo">
+            <h2>Ministerios</h2>
+        </div>
     );
 }
 

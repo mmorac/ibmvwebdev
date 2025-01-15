@@ -15,6 +15,8 @@
 body{
     background-image: url("/img/ibmv_fondo.jpeg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
     height: 100vh;
     margin: 0;
@@ -22,13 +24,15 @@ body{
     font-family: 'Bambino Bold', sans-serif;
 }
 
+/* Cubierta negra sobre el fondo */
+
 body::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 60rem;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
@@ -53,16 +57,16 @@ body::before {
     display: flex;    
 }
 
+.titulo h2{
+    text-align: center;
+}
+
 .descripcion{
     position: relative;
     z-index: 2;
     justify-content: center;
     color: rgb(200, 200, 200);
     display: flex;    
-}
-
-.titulo h2{
-    text-align: center;
 }
 
 /* ELEMENTOS DEL NAVBAR */
@@ -112,10 +116,25 @@ body::before {
 
 /* ELEMENTOS DE LA PÁGINA VISÍTANOS */
 
-.contenedorimagenvisita{
-    height: 60%;
-    width: 50%;
+.direcciones{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
 }
+
+.direcciones p{
+    
+    line-height: 1.2;
+}
+
+.contenedorimagenvisita{
+    height: 100%;
+    width: 100%;
+}
+
 .como_llegar{
     display: inline-flex;
     width: 90%;
@@ -176,10 +195,23 @@ body::before {
         height: 5rem;
     }
 
+    .titulo{
+        padding-top: 20%;
+        position: relative;
+        z-index: 2;
+        justify-content: center;
+        color: rgb(200, 200, 200);
+        display: flex;    
+    }
+    
+    .titulo h2{
+        text-align: center;
+    }
+    
     .contacto_container{
         width: 60%;
         margin-left: 20%;
-        margin-top: 0;
+        margin-top: 5%;
         text-align: center;
         position: relative;
         z-index: 3;
