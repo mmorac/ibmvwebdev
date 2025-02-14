@@ -16,10 +16,10 @@ jobs:
           name: Build the Project
           command: |
             export CI=false
-            npm run build          
+            npm run build
       - run:
           name: Deploy to Firebase
-          command: firebase deploy --token $FIREBASE_AUTH_TOKEN
+          command: ./node_modules/.bin/firebase deploy --token $FIREBASE_AUTH_TOKEN
 
 workflows:
   version: 2
