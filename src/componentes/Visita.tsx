@@ -15,13 +15,13 @@ const Visita: React.FC = () => {
                     Culto de oración - Miércoles 19:30.
                 </p>
                 <p>
+                    Reunion de jóvenes - Sábado 12:00
+                </p>
+                <p>
                     Cultos generales - Domingo 10:00 y 12:30
                 </p>
                 <p>
                     Escuela dominical - Domingo 11:15
-                </p>
-                <p>
-                    Culto de oración - Miércoles 19:30
                 </p>
                 <div className="subtituloVisita">
                     <h3 className="vertical-align">¿Dónde?</h3>

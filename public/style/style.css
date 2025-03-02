@@ -186,29 +186,38 @@ body::before {
 
 /* ELEMENTOS DE LA PÁGINA MINISTERIOS*/
 
-.ministerio_ninos, .ministerio_jovenes, .ministerio_adultos, .ministerio_misiones{
+.contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.ministerio_ninos, .ministerio_jovenes, .ministerio_hombres, .ministerio_mujeres, .ministerio_misiones{
     position: relative;
     color: rgb(200, 200, 200);
     z-index: 2;
     justify-content: center;
     align-items: center;
     display: inline-flex;
-    width: 25%;
+    width: 20%;
     height: 20rem;
     margin-top: 5%;
     transition: background-color 0.3s ease, color 0.3s ease;
     transition-delay: 0.2s;
 }
 
+/* NIÑOS */
+
 .ministerio_ninos{
-    background-image: url("/img/Infantil.jpg");
+    background-image: url("/img/clase_infantil.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     overflow: hidden;
 }
 
-.ministerio_ninos::before {
+.ministerio_ninos::before, .ministerio_jovenes::before {
     content: '';
     position: absolute;
     top: 0;
@@ -221,29 +230,107 @@ body::before {
     transition-delay: 0.2s;
 }
 
-.ministerio_ninos:hover::before {
+.ministerio_ninos:hover::before, .ministerio_jovenes:hover::before {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-.ministerio_ninos p {
+.ministerio_ninos p, .ministerio_jovenes p {
     position: relative;
-    z-index: 2;
+    z-index: 3;
+    color: rgb(200, 200, 200)
 }
 
-.ministerio_ninos:hover{
+.ministerio_ninos:hover, .ministerio_jovenes:hover{
     background-color: rgb(200, 200, 200);
     color: black;
 }
 
+/* JÓVENES */
 
-.ministerio_jovenes:hover{
+.ministerio_jovenes{
+    background-image: url("/img/jovenes.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* HOMBRES */
+
+.ministerio_hombres{
+    background-image: url("/img/hombres.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.ministerio_hombres::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transition-delay: 0.2s;
+}
+
+.ministerio_hombres:hover::before {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.ministerio_hombres p {
+    position: relative;
+    z-index: 3;
+}
+
+.ministerio_hombres:hover{
     background-color: rgb(200, 200, 200);
     color: black;
 }
-.ministerio_adultos:hover{
+
+/* MUJERES */
+.ministerio_mujeres{
+    background-image: url("/img/mujeres.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.ministerio_mujeres::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transition-delay: 0.2s;
+}
+
+.ministerio_mujeres:hover::before {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.ministerio_mujeres p {
+    position: relative;
+    z-index: 3;
+}
+
+.ministerio_mujeres:hover{
     background-color: rgb(200, 200, 200);
     color: black;
 }
+
+/* MISIONES */
+
 .ministerio_misiones:hover{
     background-color: rgb(200, 200, 200);
     color: black;
@@ -320,7 +407,6 @@ body::before {
     .botonInicio{
         position: relative;
         z-index: 2;
-        justify-content: center;
         display: flex;
         margin-top: 5%;
         width: 40%;
@@ -329,13 +415,14 @@ body::before {
         border-radius: 8px;
         display: flex;
         align-items: center;
+        text-align: center;
         justify-content: center;
         text-decoration: none;
         color: rgba(0, 0, 0, 0.7);
     }
     
     
-    .ministerio_ninos, .ministerio_jovenes, .ministerio_adultos, .ministerio_misiones{
+    .ministerio_ninos, .ministerio_jovenes, .ministerio_hombres, .ministerio_mujeres, .ministerio_misiones{
         width: 100%;
         flex-direction: column;
     }

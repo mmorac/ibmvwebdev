@@ -13,7 +13,8 @@ const Ministerios: React.FC = () =>{
                     </p>
                 </div>
                 <div className="ministerio_jovenes">Jóvenes</div>
-                <div className="ministerio_adultos">Adultos</div>
+                <div className="ministerio_hombres">Hombres</div>
+                <div className="ministerio_mujeres">Mujeres</div>
                 <div className="ministerio_misiones">Misiones</div>
             </div>
         </div>
