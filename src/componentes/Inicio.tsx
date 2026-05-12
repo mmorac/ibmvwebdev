@@ -4,6 +4,15 @@ import { Link } from "react-router-dom";
 const Inicio: React.FC = () => {
     return (
         <div>
+            {/* <video 
+                className="video-background" 
+                autoPlay 
+                muted 
+                loop 
+                playsInline
+            >
+                <source src="/videos/background.mp4" type="video/mp4" />
+            </video>             */}
             <div className="titulo-video-wrapper">
                 <div className="titulo">
                     <h2>Somos la Iglesia Bautista Más Vida</h2>
@@ -16,7 +25,7 @@ const Inicio: React.FC = () => {
             </div>
             <div className="accesosRapidos">
                 <Link to="/visita" className="botonInicio">¿Primera visita?</Link>
-                <a href="/docs/Declaracion_de_fe.pdf" className="botonInicio">¿Qué creemos?</a>
+                <a href="/docs/Declaracion_de_fe.pdf" className="botonInicio">¿En qué creemos?</a>
             </div>
         </div>
     );
