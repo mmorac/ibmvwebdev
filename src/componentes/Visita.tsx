@@ -6,36 +6,66 @@ const Visita: React.FC = () => {
             <div className="titulo">
                 <h1>Visítanos</h1>
             </div>
-            <div></div>
-            <div className="direcciones">
-                <div className="subtituloVisita">
-                    <h3 className="vertical-align">¿Cuándo?</h3>
+            <div className="visita-container">
+                <div className="visita-section">
+                    <div className="section-header">
+                        <span className="section-icon">🕐</span>
+                        <h2>¿Cuándo?</h2>
+                    </div>
+                    <div className="horario-grid">
+                        <div className="horario-item">
+                            <span className="horario-dia">Miércoles</span>
+                            <span className="horario-hora">19:30</span>
+                            <span className="horario-descripcion">Culto de oración</span>
+                        </div>
+                        <div className="horario-item">
+                            <span className="horario-dia">Sábado</span>
+                            <span className="horario-hora">12:00</span>
+                            <span className="horario-descripcion">Reunión de jóvenes</span>
+                        </div>
+                        <div className="horario-item">
+                            <span className="horario-dia">Domingo</span>
+                            <span className="horario-hora">10:00 y 12:30</span>
+                            <span className="horario-descripcion">Cultos generales</span>
+                        </div>
+                        <div className="horario-item">
+                            <span className="horario-dia">Domingo</span>
+                            <span className="horario-hora">11:15</span>
+                            <span className="horario-descripcion">Escuela dominical</span>
+                        </div>
+                    </div>
                 </div>
-                <p>
-                    Culto de oración - Miércoles 19:30.
-                </p>
-                <p>
-                    Reunion de jóvenes - Sábado 12:00
-                </p>
-                <p>
-                    Cultos generales - Domingo 10:00 y 12:30
-                </p>
-                <p>
-                    Escuela dominical - Domingo 11:15
-                </p>
-                <div className="subtituloVisita">
-                    <h3 className="vertical-align">¿Dónde?</h3>
+
+                <div className="visita-section">
+                    <div className="section-header">
+                        <span className="section-icon">📍</span>
+                        <h2>¿Dónde?</h2>
+                    </div>
+                    <div className="ubicacion-info">
+                        <p className="direccion-principal">
+                            <strong>Calle Sahagún 28, Alcorcón</strong>
+                        </p>
+                        <div className="transporte-opciones">
+                            <div className="transporte-item">
+                                <span className="transporte-icon">🚆</span>
+                                <p>Línea C-5 de Cercanías Madrid (estación San José de Valderas)</p>
+                            </div>
+                            <div className="transporte-item">
+                                <span className="transporte-icon">🚌</span>
+                                <p>Autobús interurbano 513 desde Príncipe Pío (parada Avenida de Lisboa - Centro de Salud)</p>
+                            </div>
+                            <div className="transporte-item">
+                                <span className="transporte-icon">🚇</span>
+                                <p>Estación Parque Lisboa del Metro Sur, línea 12</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p>
-                    Estamos en la calle Sahagún 28 en Alcorcón, con acceso cercano desde RENFE, autobús y Metro.
-                </p>
-                <p>
-                    Puedes llegar desde la línea C-5 de Cercanías Madrid (estación San José de Valderas), autobús interurbano 513 desde Príncipe Pío (parada Avenida de Lisboa - Centro de Salud) y a la estación Parque Lisboa del Metro Sur, línea 12.
-                </p>
             </div>
+
             <div className="container">
                 <div className="contenedorimagenvisita">
-                    <img className="como_llegar" src="/img/ibmv_transporte.png" alt="" />
+                    <img className="como_llegar" src="/img/ibmv_transporte.png" alt="Mapa de transporte a la iglesia" />
                 </div>
             </div>
         </div>

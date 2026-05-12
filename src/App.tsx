@@ -13,7 +13,7 @@ const App: React.FC = () => {
     const collapseElement = collapseRef.current;
     if (collapseElement && collapseElement.classList.contains("show")) {
       const bsCollapse = new (window as any).bootstrap.Collapse(collapseElement);
-      bsCollapse.hide(); // Oculta el menú colapsable
+      bsCollapse.hide();
     }
   };
 
@@ -21,10 +21,10 @@ const App: React.FC = () => {
     <Router>
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <div className="container">
-            <a className="navbar-brand" href="">
-              <img className="social" src="/img/ibmv_logo.png" alt="Logo" />
-            </a>
+          <div className="container-fluid">
+            <Link className="navbar-brand" to="/">
+              <img className="social" src="/img/ibmv_logo.png" alt="Logo IBMV" />
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -39,7 +39,7 @@ const App: React.FC = () => {
             <div
               className="collapse navbar-collapse justify-content-center"
               id="navbarSupportedContent"
-              ref={collapseRef} // Aseguramos que el ref está conectado
+              ref={collapseRef}
             >
               <ul className="navbar-nav">
                 <li className="nav-item">
