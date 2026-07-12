@@ -19,8 +19,8 @@ const Visita: React.FC = () => {
                             <span className="horario-descripcion">Culto de oración</span>
                         </div>
                         <div className="horario-item">
-                            <span className="horario-dia">Sábado</span>
-                            <span className="horario-hora">12:00</span>
+                            <span className="horario-dia">Viernes</span>
+                            <span className="horario-hora">19:30</span>
                             <span className="horario-descripcion">Reunión de jóvenes</span>
                         </div>
                         <div className="horario-item">
